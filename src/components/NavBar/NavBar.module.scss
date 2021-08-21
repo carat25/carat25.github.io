@@ -1,0 +1,74 @@
+@import "../../styles/variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  
+
+  &__brand {
+    display: flex;
+   
+
+    &_name {
+      font-family: $tertiary-font;
+      color: $color-purple;
+      font-weight: bolder;
+      font-size: 1.5rem;
+      text-decoration: none;
+      margin: 10px 20px;
+
+      &:hover {
+        color: $color-fuchsia;
+      }
+
+      &_tiny {
+        font-size: 1rem;
+        font-family: $tertiary-font;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    list-style-type: none;
+
+
+    &_item {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: $color-purple;
+      font-family: $secondary-font;
+
+      &:active {
+        color: $color-fuchsia;
+        border: 2px dashed $color-fuchsia;
+        text-decoration: none;
+      }
+
+      &:hover {
+        color: $color-fuchsia;
+        cursor: pointer;
+      }
+    }
+    &_cv {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: $color-purple;
+      font-family: $secondary-font;
+      border: 2px solid $color-fuchsia;
+      border-radius: 5px;
+      padding: 0px 20px;
+      margin-right: 20px;
+
+      &:hover {
+        background-color: rgba(251, 69, 112, 0.3);
+        color: $color-fuchsia;
+        cursor: pointer;
+      }
+    }
+  }
+}

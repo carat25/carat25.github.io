@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.contact {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: $color-purple;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+  }

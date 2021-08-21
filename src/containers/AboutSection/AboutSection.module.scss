@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.about {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin: 0px 250px;
+  // grid-gap: 50px;
+}
+
+.aboutme {
+  &__normal {
+    font-family: $secondary-font;
+    text-align: start;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    padding: 10px 0px;
+    color: $color-purple;
+  }
+
+  &__par {
+    font-family: $primary-font;
+    text-align: start;
+    font-size: 1.1rem;
+
+    color: $color-purple;
+
+    &_bold {
+      font-family: $secondary-font;
+    }
+  }
+}
+
+.aboutphoto {
+  text-align: center;
+  padding-top: 50px;
+  
+
+  &__myphoto {
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 15px 15px 5px $color-indigo;
+    opacity: 0.5;
+    
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
