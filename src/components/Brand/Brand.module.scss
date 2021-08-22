@@ -1,12 +1,11 @@
 @import "../../styles/variables";
 
-
-.container{
-  padding: 100px 400px 0px 400px;
+.container {
+  padding: 100px 300px 0px 300px;
   min-height: 80vh;
 }
 
-.brandcontainer{
+.brandcontainer {
   padding: 10px 0px;
 }
 
@@ -15,7 +14,7 @@
   text-align: left;
   flex-direction: column;
   justify-content: flex-start;
-
+  align-items: flex-start;
 
   &__name {
     font-family: $secondary-font;
@@ -24,6 +23,12 @@
     margin: 0;
     text-shadow: -1px -1px 1px #efdcf9, 1px 1px 1px $color-purple;
     opacity: 0.9;
+
+    &_tiny {
+      font-size: 1rem;
+      font-family: $primary-font;
+      text-shadow: none;
+    }
   }
 
   &__title {
@@ -38,60 +43,31 @@
     font-size: 1.2rem;
     margin: 0;
     font-family: $primary-font;
-    max-width: 500px;
-
-    &_wave {
-      animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-      animation-duration: 2.5s; /* Change to speed up or slow down */
-      animation-iteration-count: infinite; /* Never stop waving :) */
-      transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-      display: inline-block;
-      font-size: 2rem;
-    }
-
-    @keyframes wave-animation {
-      0% {
-        transform: rotate(0deg);
-      }
-      10% {
-        transform: rotate(14deg);
-      } /* The following five values can be played with to make the waving more or less extreme */
-      20% {
-        transform: rotate(-8deg);
-      }
-      30% {
-        transform: rotate(14deg);
-      }
-      40% {
-        transform: rotate(-4deg);
-      }
-      50% {
-        transform: rotate(10deg);
-      }
-      60% {
-        transform: rotate(0deg);
-      } /* Reset for the last half to pause */
-      100% {
-        transform: rotate(0deg);
-      }
-    }
+    // max-width: 500px;
   }
 
-&__btn{
-  font-family: $primary-font;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  color: $color-purple;
-  padding: 10px 20px;
-  background-color: transparent;
-  border-radius: 5px;
-  border-color: $color-fuchsia;
-  margin-top: 40px;
-
-  &:hover{
-    background-color: rgba(251,69,112, 0.3);
+  &__greeting {
     color: $color-fuchsia;
+    font-size: 3rem;
+    margin: 0;
+    font-family: $tertiary-font;
+    font-weight: bolder;
   }
-}
 
+  &__btn {
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: $color-purple;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: $color-fuchsia;
+    margin-top: 40px;
+
+    &:hover {
+      background-color: rgba(251, 69, 112, 0.3);
+      color: $color-fuchsia;
+    }
+  }
 }
