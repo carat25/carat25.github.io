@@ -26,13 +26,15 @@ useEffect(() => {
         <Typist.Backspace count={10} delay={500} />
         <span className={styles.brand__greeting}>Chào bạn!</span>
         <Typist.Backspace count={10} delay={500} />
-        <span className={styles.brand__greeting}>Hai!</span>
+        <span className={styles.brand__greeting}>Salut!</span>
         <Typist.Backspace count={20} delay={500} />
         <span className={styles.brand__greeting}>Nǐ hǎo!</span>
         <Typist.Backspace count={10} delay={500} />
-        <span className={styles.brand__greeting}>Yā!</span>
+        <span className={styles.brand__greeting}>¡Hola!</span>
         <Typist.Backspace count={10} delay={500} />
-        <span className={styles.brand__greeting}>suostei!</span>
+        <span className={styles.brand__greeting}>annyeonghaseyo!</span>
+        <Typist.Backspace count={10} delay={500} />
+        <span className={styles.brand__greeting}>'ahla!</span>
         <Typist.Backspace count={10} delay={500} />
         <span className={styles.brand__greeting}>namaste!</span>
         <Typist.Backspace count={10} delay={500} />
