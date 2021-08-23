@@ -5,13 +5,7 @@ import { HomePage } from "./containers/HomePage/HomePage";
 import { AboutSection } from "./containers/AboutSection/AboutSection";
 import { Contact } from "./components/Contact/Contact";
 import { ProjectSection } from "./containers/ProjectSection/ProjectSection.jsx";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-  Link,
-} from "react-router-dom";
+
 
 const App = () => {
   return (

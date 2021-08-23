@@ -1,8 +1,11 @@
 import styles from "./ProjectSection.module.scss";
 import GoogleBooksProj from "../../styles/GoogleBooksProj.png";
 import ecommerce_main from "../../styles/ecommerce_main.png";
+import {useSpring, a} from "@react-spring/web";
+import {useState} from "react";
 
 export const ProjectSection = () => {
+
   return (
     <div id="project" className={styles.projects}>
       <h2 className={styles.projects__title}>
@@ -27,7 +30,7 @@ export const ProjectSection = () => {
           </div>
         </div>
 
-        <div className={styles.projects__list_items}>
+        {/* <div className={styles.projects__list_items}>
           <div className={styles.googlebook__desc}>
             <h5 className={styles.googlebook__desc_header}>Featured Project</h5>
             <h3 className={styles.googlebook__desc_title}>Google Books</h3>
@@ -41,7 +44,7 @@ export const ProjectSection = () => {
             height="400px"
             className={styles.googlebook__image}
           ></img>
-        </div>
+        </div> */}
       </div>
     </div>
   );
