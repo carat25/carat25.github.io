@@ -1,50 +1,9 @@
 @import "../../styles/variables";
 
-.container {
-  padding: 80px 200px 0px 200px;
-  min-height: 80vh;
-}
 
-.brandcontainer {
-  padding: 10px 0px;
-}
-
-.brand {
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  &__name {
-    font-family: $secondary-font;
-    font-size: 6rem;
-    color: $color-purple;
-    margin: 0;
-    text-shadow: -1px -1px 1px #efdcf9, 1px 1px 1px $color-purple;
-    opacity: 0.9;
-
-    &_tiny {
-      font-size: 1rem;
-      font-family: $primary-font;
-      text-shadow: none;
-    }
-  }
-
-  &__title {
-    font-family: $secondary-font;
-    font-size: 3rem;
-    color: $color-mauve;
-    margin: 0;
-  }
-
-  &__par {
-    color: $color-purple;
-    font-size: 1.2rem;
-    margin: 0;
-    font-family: $primary-font;
-    // max-width: 500px;
-  }
+.brandBody {
+  padding: 50px 250px;
+  min-height: 60vh;
 
   &__greeting {
     color: $color-fuchsia;
@@ -54,20 +13,115 @@
     font-weight: bolder;
   }
 
-  &__btn {
-    font-family: $primary-font;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    color: $color-purple;
-    padding: 10px 20px;
-    background-color: transparent;
-    border-radius: 5px;
-    border-color: $color-fuchsia;
-    margin-top: 40px;
+  &__header {
+    &_name {
+      font-family: $secondary-font;
+      font-size: 6rem;
+      color: $color-purple;
+      margin: 0;
+      text-shadow: -1px -1px 1px $color-purplehaze, 1px 1px 1px $color-purple;
+      opacity: 0.9;
+    }
+    &_tiny {
+      font-size: 1rem;
+      font-family: $primary-font;
+      text-shadow: none;
+    }
+    &_title {
+      font-family: $secondary-font;
+      font-size: 3rem;
+      color: $color-mauve;
+      margin: 0;
+    }
+    &_par {
+      color: $color-purple;
+      font-size: 1.2rem;
+      margin: 0;
+      font-family: $primary-font;
+      // max-width: 500px;
+    }
+    &_btn {
+      background-image: linear-gradient(
+        to right,
+        $color-purple 0%,
+        $color-mauve 51%,
+        $color-fuchsia 100%
+      );
+      margin-top: 30px;
+      padding: 15px 45px;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: $color-lilac;
+      // box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      display: block;
+      font-family: $primary-font;
+      font-size: 1rem;
+      font-weight: bolder;
+      border: 2px solid $color-purple;
+      
 
-    &:hover {
-      background-color: rgba(251, 69, 112, 0.3);
-      color: $color-fuchsia;
+      &:hover {
+        background-position: right center; /* change the direction of the change here */
+        text-decoration: none;
+        color: $color-indigo;
+        border: 2px solid $color-mauve;
+      }
     }
   }
+}
+
+.brandContact{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+
+  &::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100px;
+    margin: 0px auto;
+    background-color: $color-mauve;
+}
+}
+
+.brandIcon {
+display: flex;
+flex-direction: column;
+
+
+  &__icon{
+    padding: 10px 10px;
+    color: $color-indigo;
+    &:hover{
+      color:$color-mauve;
+    }
+    
+    }
+}
+
+
+
+.brandEmail{
+  
+  &__email{
+    writing-mode: vertical-lr;
+    text-decoration: none;
+    color: $color-indigo;
+    padding: 10px 15px;
+    &:hover{
+      color:$color-mauve;
+    
+    }
+  }
+}
+
+
+.link{
+  text-decoration: none;
 }

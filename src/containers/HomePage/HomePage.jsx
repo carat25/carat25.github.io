@@ -5,7 +5,7 @@ import { ProjectSection } from "../ProjectSection/ProjectSection.jsx";
 export const HomePage = () => {
     return (
         <>
-        <Brand/>
+        <Brand />
         <ProjectSection />
         </>
     );

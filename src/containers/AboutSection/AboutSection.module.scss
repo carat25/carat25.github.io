@@ -15,17 +15,31 @@
     font-size: 1.8rem;
     padding: 10px 0px;
     color: $color-purple;
+    &::after{
+      content: "";
+      display: inline-block;
+      width: 500px;
+      height: 1px;
+      margin: 5px 10px 5px;
+      background-color: $color-mauve;
+    }
   }
 
   &__par {
     font-family: $primary-font;
     text-align: start;
     font-size: 1.1rem;
-
     color: $color-purple;
 
     &_bold {
       font-family: $secondary-font;
+      color: $color-mauve;
+      text-decoration: none;
+      font-weight: bolder;
+
+      &:hover{
+        color: $color-fuchsia;
+      }
     }
   }
 }
@@ -38,12 +52,14 @@
   &__myphoto {
     border-radius: 8px;
     box-sizing: border-box;
-    box-shadow: 15px 15px 5px $color-indigo;
+    box-shadow: 10px 10px 10px $color-mauve;
     opacity: 0.5;
     
 
     &:hover {
       opacity: 1;
+      box-shadow: 5px 5px 5px $color-fuchsia;
+      margin: 5px 5px;
     }
   }
 }

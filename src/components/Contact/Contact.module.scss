@@ -1,11 +1,22 @@
 @import "../../styles/variables";
 
 .contact {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color: $color-purple;
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-    height: 300px;
+  color: $color-indigo;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 150px;
+
+  &__icon {
+    padding: 0px 10px;
+    cursor: pointer;
+    color:$color-indigo;
+
+    &:hover {
+      color: $color-fuchsia;
+      stroke: currentColor;
+      transform: scale(1.3);
+      transition: all 0.45s;
+    }
   }
+
+}

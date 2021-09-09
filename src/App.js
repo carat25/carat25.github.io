@@ -5,18 +5,18 @@ import { HomePage } from "./containers/HomePage/HomePage";
 import { AboutSection } from "./containers/AboutSection/AboutSection";
 import { Contact } from "./components/Contact/Contact";
 import { ProjectSection } from "./containers/ProjectSection/ProjectSection.jsx";
+import { ContactSection } from "./containers/ContactSection/ContactSection";
 
+import React, { useCallback, useEffect, useState } from "react";
 
 const App = () => {
+
+
   return (
     <>
-      {/* <Router> */}
       <div className={styles.app}>
         <header className={styles.navbar}>
-          {/* <Link to="/HomePage" className={styles.brand}> */}
           <NavBar />
-          {/* <Contact /> */}
-          {/* </Link> */}
         </header>
         <main>
           <Brand />
@@ -25,24 +25,13 @@ const App = () => {
           <AboutSection />
         </section>
         <section>
-          <ProjectSection />
+       <ProjectSection />
+
         </section>
-        {/* <Switch>
-            <Route exact path="/">
-              <Redirect to="/HomePage" />
-            </Route>
-            <Route exact path="/HomePage">
-              <HomePage />
-            </Route>
-            <Route exact path="/ProjectSection">
-              <ProjectSection />
-            </Route>
-            <Route exact path="/AboutSection">
-              <AboutSection />
-            </Route>
-          </Switch> */}
+        <section>
+          <ContactSection />
+        </section>
    </div>
-      {/* </Router> */}
     </>
   );
 };

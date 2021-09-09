@@ -22,16 +22,10 @@ export const NavBar = () => {
             </a>
           </li>
           <li className={styles.navbar__links_item}>
-            <a className={styles.navbar__links_item}>Contact</a>
+            <a href="#contact" className={styles.navbar__links_item}>Contact</a>
           </li>
-          <li className={styles.navbar__links_cv}>
-            <a className={styles.cv}>CV</a>
-            {/* <a
-            // className={styles.cv}
-            href="https://drive.google.com/file/d/1uiWEA-P7Ae5QbhsN1tWPb3-oq4yBOayz/view?usp=sharing"
-          >
-            CV
-          </a> */}
+          <li>
+            <a href="https://drive.google.com/file/d/1uiWEA-P7Ae5QbhsN1tWPb3-oq4yBOayz/view?usp=sharing" className={styles.navbar__links_cv}>CV</a>
           </li>
         </ol>
       </nav>

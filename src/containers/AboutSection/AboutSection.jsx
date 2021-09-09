@@ -11,7 +11,7 @@ export const AboutSection = () => {
           Hello! My name is Cara and I am a Software QA Analyst/ Engineer turned
           Software Developer. I have recently completed a 12-weeks Software
           Development course in{" "}
-          <span className={styles.aboutme__par_bold}>_nology.io</span>. My
+          <a href="https://au.nology.io" className={styles.aboutme__par_bold}>_nology.io</a>. My
           interest in software development started when I was at the peek of my
           Software QA career. I have always relied on developers to create test
           data, fixed test environments and change configurations in the

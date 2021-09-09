@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 800px;
+  height: 400px;
+
+  &__photos {
+    position: absolute;
+    background-position: center;
+    will-change: opacity;
+    image-rendering: -moz-crisp-edges;
+    box-shadow: 5px 5px 5px $color-mauve;
+    border-radius: 5px 5px;
+    
+  }
+}

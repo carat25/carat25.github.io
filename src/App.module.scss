@@ -2,7 +2,9 @@
 
 
 .app {
-  background: linear-gradient(to bottom, #ffaebc 0%, #fbe7c6 100%);
   width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
 }
 
